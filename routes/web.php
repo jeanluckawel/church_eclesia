@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/membres',[\App\Http\Controllers\MembresController::class,'index'])->name('membres.index');
-Route::post('/membres/store',[\App\Http\Controllers\MembresController::class,'store'])->name('membres.store');
+Route::post('/membres/store',[ \App\Http\Controllers\MembresController::class,'store'])->name('membres.store');
 Route::delete('/members/{member}', [MembresController::class, 'destroy'])
     ->name('members.destroy');
 
