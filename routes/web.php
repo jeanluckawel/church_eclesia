@@ -11,13 +11,7 @@ Route::get('/', function () {
 
 Route::get('/membres',[\App\Http\Controllers\MembresController::class,'index'])->name('membres.index');
 
-
-
-
-
-
-
-Route::get('/inactif',[ \App\Http\Controllers\MembresController::class,'inactif'])->name('membres.inactif');
+Route::get('/inactif',[MembresController::class,'inactif'])->name('membres.inactif');
 
 
 
