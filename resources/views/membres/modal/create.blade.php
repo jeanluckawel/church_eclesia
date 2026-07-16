@@ -741,7 +741,7 @@
 
 
                     <button type="submit"
-                            class="btn btn-success d-none"
+                            class="btn btn-success"
                             id="saveBtn">
 
                         Enregistrer
@@ -1130,6 +1130,10 @@
 </style>
 
 <script>
+
+    document.querySelector('form').addEventListener('submit', function(e){
+        console.log('Formulaire envoyé');
+    });
 
     let current = 0;
 
