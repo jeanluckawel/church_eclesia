@@ -25,6 +25,10 @@
                   enctype="multipart/form-data"
                   autocomplete="off">
 
+                    @csrf
+
+
+
 
                 <div class="modal-body">
 
