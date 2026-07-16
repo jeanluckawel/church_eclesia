@@ -77,75 +77,75 @@
                  NOUVEAUX VENUS
             ========================== -->
 
-            <li class="nav-item menu-open">
+{{--            <li class="nav-item menu-open">--}}
 
-                <a href="#" class="nav-link active">
+{{--                <a href="#" class="nav-link active">--}}
 
-                    <i class="nav-icon bi bi-person-plus-fill"></i>
+{{--                    <i class="nav-icon bi bi-person-plus-fill"></i>--}}
 
-                    <p>
+{{--                    <p>--}}
 
-                        Nouveaux venus
+{{--                        Nouveaux venus--}}
 
-                        <i class="nav-arrow bi bi-chevron-right"></i>
+{{--                        <i class="nav-arrow bi bi-chevron-right"></i>--}}
 
-                    </p>
+{{--                    </p>--}}
 
-                </a>
+{{--                </a>--}}
 
-                <ul class="nav nav-treeview" style="display:block;">
+{{--                <ul class="nav nav-treeview" style="display:block;">--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/visitors" class="nav-link">
+{{--                        <a href="/visitors" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-people-fill"></i>
+{{--                            <i class="nav-icon bi bi-people-fill"></i>--}}
 
-                            <p>Liste visiteurs</p>
+{{--                            <p>Liste visiteurs</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/visitors/create" class="nav-link">
+{{--                        <a href="/visitors/create" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-person-plus"></i>
+{{--                            <i class="nav-icon bi bi-person-plus"></i>--}}
 
-                            <p>Nouveau visiteur</p>
+{{--                            <p>Nouveau visiteur</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/visitors/import" class="nav-link">
+{{--                        <a href="/visitors/import" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-file-earmark-excel-fill"></i>
+{{--                            <i class="nav-icon bi bi-file-earmark-excel-fill"></i>--}}
 
-                            <p>Import Excel</p>
+{{--                            <p>Import Excel</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/visitors/conversion" class="nav-link">
+{{--                        <a href="/visitors/conversion" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-person-check-fill"></i>
+{{--                            <i class="nav-icon bi bi-person-check-fill"></i>--}}
 
-                            <p>Conversion membre</p>
+{{--                            <p>Conversion membre</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                </ul>
+{{--                </ul>--}}
 
-            </li>
+{{--            </li>--}}
 
 
 
@@ -194,87 +194,87 @@
                  FINANCES
             ========================== -->
 
-            <li class="nav-item menu-open">
+{{--            <li class="nav-item menu-open">--}}
 
-                <a href="#" class="nav-link active">
+{{--                <a href="#" class="nav-link active">--}}
 
-                    <i class="nav-icon bi bi-cash-stack"></i>
+{{--                    <i class="nav-icon bi bi-cash-stack"></i>--}}
 
-                    <p>
+{{--                    <p>--}}
 
-                        Finances
+{{--                        Finances--}}
 
-                        <i class="nav-arrow bi bi-chevron-right"></i>
+{{--                        <i class="nav-arrow bi bi-chevron-right"></i>--}}
 
-                    </p>
+{{--                    </p>--}}
 
-                </a>
+{{--                </a>--}}
 
-                <ul class="nav nav-treeview" style="display:block;">
+{{--                <ul class="nav nav-treeview" style="display:block;">--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/finance/incomes" class="nav-link">
+{{--                        <a href="/finance/incomes" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-cash-coin"></i>
+{{--                            <i class="nav-icon bi bi-cash-coin"></i>--}}
 
-                            <p>Entrées caisse</p>
+{{--                            <p>Entrées caisse</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/finance/receipts" class="nav-link">
+{{--                        <a href="/finance/receipts" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-receipt-cutoff"></i>
+{{--                            <i class="nav-icon bi bi-receipt-cutoff"></i>--}}
 
-                            <p>Reçus</p>
+{{--                            <p>Reçus</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/finance/petty-cash" class="nav-link">
+{{--                        <a href="/finance/petty-cash" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-wallet2"></i>
+{{--                            <i class="nav-icon bi bi-wallet2"></i>--}}
 
-                            <p>Petit cash</p>
+{{--                            <p>Petit cash</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/finance/expenses" class="nav-link">
+{{--                        <a href="/finance/expenses" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-cart-dash-fill"></i>
+{{--                            <i class="nav-icon bi bi-cart-dash-fill"></i>--}}
 
-                            <p>Dépenses</p>
+{{--                            <p>Dépenses</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/finance/audit" class="nav-link">
+{{--                        <a href="/finance/audit" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-shield-check"></i>
+{{--                            <i class="nav-icon bi bi-shield-check"></i>--}}
 
-                            <p>Annulations & Audit</p>
+{{--                            <p>Annulations & Audit</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                </ul>
+{{--                </ul>--}}
 
-            </li>
+{{--            </li>--}}
 
 
 
@@ -282,63 +282,63 @@
                  RAPPORTS
             ========================== -->
 
-            <li class="nav-item menu-open">
+{{--            <li class="nav-item menu-open">--}}
 
-                <a href="#" class="nav-link active">
+{{--                <a href="#" class="nav-link active">--}}
 
-                    <i class="nav-icon bi bi-file-earmark-bar-graph-fill"></i>
+{{--                    <i class="nav-icon bi bi-file-earmark-bar-graph-fill"></i>--}}
 
-                    <p>
+{{--                    <p>--}}
 
-                        Rapports
+{{--                        Rapports--}}
 
-                        <i class="nav-arrow bi bi-chevron-right"></i>
+{{--                        <i class="nav-arrow bi bi-chevron-right"></i>--}}
 
-                    </p>
+{{--                    </p>--}}
 
-                </a>
+{{--                </a>--}}
 
-                <ul class="nav nav-treeview" style="display:block;">
+{{--                <ul class="nav nav-treeview" style="display:block;">--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/reports/members" class="nav-link">
+{{--                        <a href="/reports/members" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-people"></i>
+{{--                            <i class="nav-icon bi bi-people"></i>--}}
 
-                            <p>Rapport des membres</p>
+{{--                            <p>Rapport des membres</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/reports/finance" class="nav-link">
+{{--                        <a href="/reports/finance" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-cash-stack"></i>
+{{--                            <i class="nav-icon bi bi-cash-stack"></i>--}}
 
-                            <p>Rapport financier</p>
+{{--                            <p>Rapport financier</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/reports/attendance" class="nav-link">
+{{--                        <a href="/reports/attendance" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-calendar-check-fill"></i>
+{{--                            <i class="nav-icon bi bi-calendar-check-fill"></i>--}}
 
-                            <p>Présences</p>
+{{--                            <p>Présences</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                </ul>
+{{--                </ul>--}}
 
-            </li>
+{{--            </li>--}}
 
 
 
@@ -352,25 +352,12 @@
 
             <li class="nav-item menu-open">
 
-                <a href="#" class="nav-link active">
-
-                    <i class="nav-icon bi bi-shield-lock-fill"></i>
-
-                    <p>
-
-                        Administration
-
-                        <i class="nav-arrow bi bi-chevron-right"></i>
-
-                    </p>
-
-                </a>
 
                 <ul class="nav nav-treeview" style="display:block;">
 
                     <li class="nav-item">
 
-                        <a href="/users" class="nav-link">
+                        <a href="{{ route('users.index') }}" class="nav-link">
 
                             <i class="nav-icon bi bi-people-fill"></i>
 
@@ -380,29 +367,29 @@
 
                     </li>
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/roles" class="nav-link">
+{{--                        <a href="/roles" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-shield-check"></i>
+{{--                            <i class="nav-icon bi bi-shield-check"></i>--}}
 
-                            <p>Rôles & Permissions</p>
+{{--                            <p>Rôles & Permissions</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
-                    <li class="nav-item">
+{{--                    <li class="nav-item">--}}
 
-                        <a href="/settings" class="nav-link">
+{{--                        <a href="/settings" class="nav-link">--}}
 
-                            <i class="nav-icon bi bi-gear-fill"></i>
+{{--                            <i class="nav-icon bi bi-gear-fill"></i>--}}
 
-                            <p>Paramètres</p>
+{{--                            <p>Paramètres</p>--}}
 
-                        </a>
+{{--                        </a>--}}
 
-                    </li>
+{{--                    </li>--}}
 
                 </ul>
 

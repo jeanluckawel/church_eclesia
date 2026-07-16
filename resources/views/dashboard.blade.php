@@ -22,7 +22,6 @@
 
                             <div class="col-sm-6">
 
-
                                 <h3 class="mb-0">
 
                                     <i class="bi bi-hand-wave-fill"></i>
@@ -67,24 +66,20 @@
 
 
 
-        {{-- CARDS DASHBOARD --}}
+        {{-- DASHBOARD CARDS --}}
 
         <div class="row justify-content-center">
 
-
             <div class="col-md-10">
-
 
                 <div class="row">
 
 
 
                     {{-- MEMBRES --}}
-
                     <div class="col-md-3 col-sm-6">
 
                         <div class="info-box shadow-sm">
-
 
                         <span class="info-box-icon text-bg-primary">
 
@@ -95,26 +90,18 @@
 
                             <div class="info-box-content">
 
-
                             <span class="info-box-text">
-
                                 Membres
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $membersCount }}
                             </span>
-
 
                             </div>
 
-
                         </div>
-
 
                     </div>
 
@@ -122,10 +109,8 @@
 
 
 
-                    {{-- VISITEURS --}}
-
+                    {{-- NOUVEAUX VENUS --}}
                     <div class="col-md-3 col-sm-6">
-
 
                         <div class="info-box shadow-sm">
 
@@ -139,26 +124,19 @@
 
                             <div class="info-box-content">
 
-
                             <span class="info-box-text">
-
                                 Nouveaux venus
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $visitorsCount }}
                             </span>
-
 
                             </div>
 
 
                         </div>
-
 
                     </div>
 
@@ -166,9 +144,7 @@
 
 
 
-
                     {{-- SUIVI PASTORAL --}}
-
                     <div class="col-md-3 col-sm-6">
 
 
@@ -186,16 +162,12 @@
 
 
                             <span class="info-box-text">
-
                                 Suivi pastoral
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $pastoralCount }}
                             </span>
 
 
@@ -211,11 +183,8 @@
 
 
 
-
                     {{-- MEMBRES INACTIFS --}}
-
                     <div class="col-md-3 col-sm-6">
-
 
                         <div class="info-box shadow-sm">
 
@@ -231,16 +200,12 @@
 
 
                             <span class="info-box-text">
-
                                 Membres inactifs
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $inactiveMembersCount }}
                             </span>
 
 
@@ -249,7 +214,6 @@
 
                         </div>
 
-
                     </div>
 
 
@@ -257,11 +221,8 @@
 
 
 
-
                     {{-- FINANCES --}}
-
                     <div class="col-md-3 col-sm-6">
-
 
                         <div class="info-box shadow-sm">
 
@@ -275,26 +236,19 @@
 
                             <div class="info-box-content">
 
-
                             <span class="info-box-text">
-
                                 Finances
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $financeCount }}
                             </span>
-
 
                             </div>
 
 
                         </div>
-
 
                     </div>
 
@@ -303,9 +257,7 @@
 
 
 
-
                     {{-- CULTES --}}
-
                     <div class="col-md-3 col-sm-6">
 
 
@@ -323,16 +275,12 @@
 
 
                             <span class="info-box-text">
-
                                 Cultes
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $servicesCount }}
                             </span>
 
 
@@ -350,9 +298,7 @@
 
 
 
-
                     {{-- PRESENCES --}}
-
                     <div class="col-md-3 col-sm-6">
 
 
@@ -370,16 +316,12 @@
 
 
                             <span class="info-box-text">
-
                                 Présences
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $attendanceCount }}
                             </span>
 
 
@@ -397,9 +339,7 @@
 
 
 
-
                     {{-- RAPPORTS --}}
-
                     <div class="col-md-3 col-sm-6">
 
 
@@ -417,16 +357,12 @@
 
 
                             <span class="info-box-text">
-
                                 Rapports
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $reportsCount }}
                             </span>
 
 
@@ -445,9 +381,7 @@
 
 
 
-
                     {{-- UTILISATEURS --}}
-
                     <div class="col-md-3 col-sm-6">
 
 
@@ -465,16 +399,12 @@
 
 
                             <span class="info-box-text">
-
                                 Utilisateurs
-
                             </span>
 
 
                                 <span class="info-box-number">
-
-                                --
-
+                                {{ $usersCount }}
                             </span>
 
 
@@ -485,7 +415,6 @@
 
 
                     </div>
-
 
 
 
@@ -501,7 +430,7 @@
 
 
 
-        {{-- SECTION ACTIVITES --}}
+        {{-- ACTIVITES RECENTES --}}
 
         <div class="row justify-content-center mt-4">
 
@@ -514,7 +443,6 @@
 
                     <div class="card-header">
 
-
                         <h5 class="mb-0">
 
                             <i class="bi bi-activity me-2"></i>
@@ -522,7 +450,6 @@
                             Activités récentes
 
                         </h5>
-
 
                     </div>
 
@@ -557,8 +484,6 @@
 
 
         </div>
-
-
 
 
 
