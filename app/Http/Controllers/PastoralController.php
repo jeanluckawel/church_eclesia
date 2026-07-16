@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Membres;
 use App\Models\Pastoral;
 use Illuminate\Http\Request;
 
@@ -12,8 +13,33 @@ class PastoralController extends Controller
      */
     public function index()
     {
-        //
+
+
+        $pastorals = Pastoral::with([
+            'member',
+            'user'
+        ])
+            ->latest()
+            ->paginate(7);
+
+
+        $members = Membres::where('status', 'Actif')
+            ->orderBy('first_name')
+            ->get();
+
+
+        return view(
+            'pastoral.index',
+            compact(
+                'pastorals',
+                'members'
+            )
+        );
+
     }
+
+    //
+
 
     /**
      * Show the form for creating a new resource.
@@ -28,7 +54,28 @@ class PastoralController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
+        Pastoral::create([
+
+//            'user_id' => auth()->id(),
+            'user_id' => 1,
+
+            'member_id' => $request->member_id,
+
+            'discussion' => $request->discussion,
+
+            'observations' => $request->observations,
+
+        ]);
+
+
+        return back()->with(
+            'success',
+            'Discussion pastorale enregistrée.'
+        );
+
+
     }
 
     /**
@@ -50,16 +97,47 @@ class PastoralController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Pastoral $pastoral)
+
+    public function update(Request $request, $id)
     {
-        //
+
+        $pastoral = Pastoral::findOrFail($id);
+
+
+        $pastoral->update([
+
+            'member_id' => $request->member_id,
+
+            'discussion' => $request->discussion,
+
+            'observations' => $request->observations,
+
+        ]);
+
+
+        return back()->with(
+            'success',
+            'Discussion modifiée.'
+        );
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Pastoral $pastoral)
+
+    public function destroy($id)
     {
-        //
+
+        $pastoral = Pastoral::findOrFail($id);
+
+
+        $pastoral->delete();
+
+
+        return back()->with(
+            'success',
+            'Discussion supprimée.'
+        );
+
     }
 }
