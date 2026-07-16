@@ -173,7 +173,7 @@
 
                     <li class="nav-item">
 
-                        <a href="/pastoral/conversations" class="nav-link">
+                        <a href="{{ route('pastoral.index') }}" class="nav-link">
 
                             <i class="nav-icon bi bi-chat-left-text-fill"></i>
 
@@ -183,17 +183,6 @@
 
                     </li>
 
-                    <li class="nav-item">
-
-                        <a href="/pastoral/history" class="nav-link">
-
-                            <i class="nav-icon bi bi-clock-history"></i>
-
-                            <p>Historique pastoral</p>
-
-                        </a>
-
-                    </li>
 
                 </ul>
 

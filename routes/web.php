@@ -1,11 +1,12 @@
 <?php
 
 use App\Http\Controllers\MembresController;
+use App\Http\Controllers\PastoralController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Home.index');
+    return view('page.index');
 });
 
 Route::get('/membres',[\App\Http\Controllers\MembresController::class,'index'])->name('membres.index');
@@ -25,6 +26,45 @@ Route::get('/membres/{id}/edit',
 Route::put('/membres/{id}/status',
     [MembresController::class,'changeStatus']
 )->name('membres.status');
+
+
+//Route::get('/pastoral',[\App\Http\Controllers\PastoralController::class,'index'])->name('pastoral.index');
+//Route::post('/pastorals',
+//    [PastoralController::class,'store']
+//)->name('pastorals.store');
+//
+//Route::put('/pastorals/{id}',
+//    [PastoralController::class, 'update']
+//)->name('pastorals.update');
+//
+//
+//
+//Route::delete('/pastorals/{id}',
+//    [PastoralController::class, 'destroy']
+//)->name('pastorals.destroy');
+
+
+
+
+
+Route::get('/pastoral',
+    [PastoralController::class,'index']
+)->name('pastoral.index');
+
+
+Route::post('/pastorals',
+    [PastoralController::class,'store']
+)->name('pastorals.store');
+
+
+Route::put('/pastorals/{id}',
+    [PastoralController::class,'update']
+)->name('pastorals.update');
+
+
+Route::delete('/pastorals/{id}',
+    [PastoralController::class,'destroy']
+)->name('pastorals.destroy');
 
 
 
