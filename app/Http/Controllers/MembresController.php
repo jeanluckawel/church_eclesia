@@ -12,7 +12,9 @@ class MembresController extends Controller
      */
     public function index()
     {
-        $members = Membres::latest()->paginate(7);
+        $members = Membres::where('status', 'Actif')
+            ->latest()
+            ->paginate(7);
 
         return view('membres.index', compact('members'));
     }
@@ -189,4 +191,45 @@ class MembresController extends Controller
             ->back()
             ->with('success', 'Le membre a été supprimé avec succès.');
     }
+
+    public function inactif()
+    {
+        $members = Membres::where('status', 'Inactif')
+            ->latest()
+            ->paginate(7);
+
+
+        return view('membres.inactif', compact('members'));
+    }
+
+
+    public function changeStatus($id)
+    {
+
+        $member = Membres::findOrFail($id);
+
+
+        if($member->status == "Actif"){
+
+            $member->status = "Inactif";
+
+        }else{
+
+            $member->status = "Actif";
+
+        }
+
+
+        $member->save();
+
+
+
+        return back()->with(
+            'success',
+            'Statut du membre modifié avec succès.'
+        );
+
+    }
+
+
 }

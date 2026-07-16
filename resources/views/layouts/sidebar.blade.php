@@ -52,21 +52,11 @@
 
                     </li>
 
-                    <li class="nav-item">
 
-                        <a href="/members/create" class="nav-link">
-
-                            <i class="nav-icon bi bi-person-plus-fill"></i>
-
-                            <p>Nouveau membre</p>
-
-                        </a>
-
-                    </li>
 
                     <li class="nav-item">
 
-                        <a href="/members/inactive" class="nav-link">
+                        <a href="{{ route('membres.inactif') }}" class="nav-link">
 
                             <i class="nav-icon bi bi-person-dash-fill"></i>
 
@@ -76,17 +66,6 @@
 
                     </li>
 
-                    <li class="nav-item">
-
-                        <a href="/departments" class="nav-link">
-
-                            <i class="nav-icon bi bi-diagram-3-fill"></i>
-
-                            <p>Départements</p>
-
-                        </a>
-
-                    </li>
 
                 </ul>
 

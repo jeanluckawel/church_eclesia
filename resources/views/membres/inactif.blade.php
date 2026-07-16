@@ -20,7 +20,7 @@
 
                             <i class="bi bi-people-fill me-2"></i>
 
-                            Liste des membres
+                            Liste des membres inactifs
 
                         </h3>
 
@@ -44,21 +44,6 @@
                             </span>
 
                             </div>
-
-
-
-                            {{-- ADD --}}
-                            <button
-                                type="button"
-                                class="btn btn-primary btn-sm"
-                                data-bs-toggle="modal"
-                                data-bs-target="#createMemberModal">
-
-                                <i class="bi bi-person-plus-fill me-1"></i>
-
-                                Nouveau membre
-
-                            </button>
 
 
                         </div>
@@ -245,7 +230,7 @@
 
                                         </span>
 
-                                     @endif
+                                        @endif
 
 
                                     </td>
@@ -256,73 +241,37 @@
                                     <td>
 
                                         {{-- VOIR --}}
-{{--                                        <button--}}
-{{--                                            type="button"--}}
-{{--                                            class="btn btn-info btn-sm viewMemberBtn"--}}
+                                        {{--                                        <button--}}
+                                        {{--                                            type="button"--}}
+                                        {{--                                            class="btn btn-info btn-sm viewMemberBtn"--}}
 
-{{--                                            data-id="{{ $membre->id }}"--}}
-{{--                                            data-name="{{ $membre->first_name }} {{ $membre->middle_name }} {{ $membre->last_name }}"--}}
-{{--                                            data-phone="{{ $membre->phone }}"--}}
-{{--                                            data-email="{{ $membre->email }}"--}}
-{{--                                            data-gender="{{ $membre->gender }}"--}}
-{{--                                            data-birth="{{ $membre->birth_date }}"--}}
-{{--                                            data-address="{{ $membre->address }}"--}}
-{{--                                            data-photo="{{ $membre->photo }}"--}}
-
-
-{{--                                            data-bs-toggle="modal"--}}
-{{--                                            data-bs-target="#viewMemberModal">--}}
-
-{{--                                            <i class="bi bi-eye-fill"></i>--}}
-
-{{--                                        </button>--}}
+                                        {{--                                            data-id="{{ $membre->id }}"--}}
+                                        {{--                                            data-name="{{ $membre->first_name }} {{ $membre->middle_name }} {{ $membre->last_name }}"--}}
+                                        {{--                                            data-phone="{{ $membre->phone }}"--}}
+                                        {{--                                            data-email="{{ $membre->email }}"--}}
+                                        {{--                                            data-gender="{{ $membre->gender }}"--}}
+                                        {{--                                            data-birth="{{ $membre->birth_date }}"--}}
+                                        {{--                                            data-address="{{ $membre->address }}"--}}
+                                        {{--                                            data-photo="{{ $membre->photo }}"--}}
 
 
+                                        {{--                                            data-bs-toggle="modal"--}}
+                                        {{--                                            data-bs-target="#viewMemberModal">--}}
 
-                                        <button
-                                            type="button"
-                                            class="btn btn-warning btn-sm editMemberBtn"
+                                        {{--                                            <i class="bi bi-eye-fill"></i>--}}
 
-                                            data-id="{{ $membre->id }}"
+                                        {{--                                        </button>--}}
 
-                                            data-first_name="{{ $membre->first_name }}"
-                                            data-last_name="{{ $membre->last_name }}"
-                                            data-middle_name="{{ $membre->middle_name }}"
-                                            data-gender="{{ $membre->gender }}"
-                                            data-birth_date="{{ $membre->birth_date }}"
-                                            data-phone="{{ $membre->phone }}"
-                                            data-email="{{ $membre->email }}"
-                                            data-address="{{ $membre->address }}"
 
-                                            data-marital_status="{{ $membre->marital_status }}"
-                                            data-spouse_name="{{ $membre->spouse_name }}"
-                                            data-marriage_date="{{ $membre->marriage_date }}"
-                                            data-marriage_type="{{ $membre->marriage_type }}"
-                                            data-children_count="{{ $membre->children_count }}"
 
-                                            data-church_join_date="{{ $membre->church_join_date }}"
-                                            data-previous_church="{{ $membre->previous_church }}"
-                                            data-previous_church_service="{{ $membre->previous_church_service }}"
-                                            data-water_baptism="{{ $membre->water_baptism }}"
-                                            data-holy_spirit_baptism="{{ $membre->holy_spirit_baptism }}"
-                                            data-slm_discipleship="{{ $membre->slm_discipleship }}"
 
-                                            data-department="{{ $membre->department }}"
-                                            data-profession="{{ $membre->profession }}"
-                                            data-professional_skills="{{ $membre->professional_skills }}"
-
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#editMemberModal">
-
-                                            <i class="bi bi-pencil-fill"></i>
-
-                                        </button>
 
 
 
                                         {{-- DESACTIVER --}}
                                         <button
-                                            class="btn btn-secondary btn-sm changeStatusBtn"
+                                            class="btn btn-sm changeStatusBtn
+                                            {{ $membre->status == 'Actif' ? 'btn-secondary' : 'btn-success' }}"
 
                                             data-id="{{ $membre->id }}"
                                             data-name="{{ $membre->first_name }} {{ $membre->last_name }}"
@@ -331,25 +280,21 @@
                                             data-bs-toggle="modal"
                                             data-bs-target="#statusMemberModal">
 
-                                            <i class="bi bi-person-dash-fill"></i>
+                                            @if($membre->status == 'Actif')
+
+                                                <i class="bi bi-person-dash-fill"></i>
+
+                                            @else
+
+                                                <i class="bi bi-person-check-fill"></i>
+
+                                            @endif
 
                                         </button>
 
 
 
 
-                                        {{-- SUPPRIMER --}}
-                                        <button
-                                            type="button"
-                                            class="btn btn-danger btn-sm deleteMemberBtn"
-                                            data-id="{{ $membre->id }}"
-                                            data-name="{{ $membre->first_name }} {{ $membre->last_name }}"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#deleteMemberModal">
-
-                                            <i class="bi bi-trash-fill"></i>
-
-                                        </button>
 
                                     </td>
 
@@ -465,11 +410,9 @@
 
     </script>
 
-    @include('membres.modal.create')
-    @include('membres.modal.delete')
-    @include('membres.modal.edit')
+
     @include('membres.modal.changeStatus')
-    @include('membres.modal.card')
+
 
 
 

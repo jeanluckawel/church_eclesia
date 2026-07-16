@@ -10,6 +10,8 @@ Route::get('/', function () {
 
 Route::get('/membres',[\App\Http\Controllers\MembresController::class,'index'])->name('membres.index');
 
+Route::get('/inactif',[\App\Http\Controllers\MembresController::class,'inactif'])->name('membres.inactif');
+
 
 
 Route::post('/membres/store',[ \App\Http\Controllers\MembresController::class,'store'])->name('membres.store');
@@ -19,6 +21,10 @@ Route::delete('/members/{member}', [MembresController::class, 'destroy'])
 Route::get('/membres/{id}/edit',
     [MembresController::class,'edit']
 )->name('membres.edit');
+
+Route::put('/membres/{id}/status',
+    [MembresController::class,'changeStatus']
+)->name('membres.status');
 
 
 
