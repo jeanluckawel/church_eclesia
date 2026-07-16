@@ -25,5 +25,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Membres::factory(10)->create();
+
     }
 }
