@@ -47,7 +47,7 @@
 
     <!-- AdminLTE -->
     <link rel="stylesheet"
-          href="{{ asset('css/adminlte.css') }}">
+          href="../../css/adminlte.css">
 
 
 
