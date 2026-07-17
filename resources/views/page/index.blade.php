@@ -1007,7 +1007,7 @@
         <a href="#message" class="site-nav__link">Message</a>
         <a href="#contact" class="site-nav__link">Contact</a>
       </nav>
-      <a href="{{ route('login') }}" class="site-btn-login" rel="nofollow">Connexion équipe</a>
+      <a href="{{ route('login') }}" class="site-btn-login" rel="nofollow">Administration</a>
     </div>
   </header>
 

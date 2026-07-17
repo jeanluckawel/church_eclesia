@@ -13,8 +13,26 @@ return new class extends Migration
     {
         Schema::create('pastorals', function (Blueprint $table) {
             $table->id();
+
+
+
+            $table->foreignId('user_id')
+                ->constrained('users')
+                ->cascadeOnDelete();
+
+            $table->foreignId('member_id')
+                ->constrained('membres')
+                ->cascadeOnDelete();
+
+            $table->text('discussion')->nullable();
+
+            $table->text('observations')->nullable();
+
+
             $table->timestamps();
         });
+
+
     }
 
     /**
