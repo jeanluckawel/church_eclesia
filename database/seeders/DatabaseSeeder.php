@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        Membres::factory(10)->create();
+//        Membres::factory(10)->create();
 
         $this->call([
             PermissionSeeder::class,
